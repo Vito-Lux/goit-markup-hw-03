@@ -478,14 +478,13 @@ button {
 }
 
 .footer .container {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .footer__logo {
-  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
