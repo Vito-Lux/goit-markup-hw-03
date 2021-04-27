@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
@@ -15,9 +15,9 @@
 
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
 
-  <header class=" section header">
+  <header class="header">
     <div class="container">
       <nav class="header-nav">
         <a class="header-nav__logo" href="./index.html"><span>Web</span>Studio</a>
@@ -50,11 +50,11 @@
 
     <!-- /PORTFOLIO -->
 
-    <!-- Filter -->
+    <!-- FILTER -->
 
     <h1 class="visually-hidden">Портфолио</h1>
 
-    <section class="section filter">
+    <section class="section filter portfolio">
       <div class="container">
         <ul class="filter__list">
           <li class="filter__item">
@@ -73,52 +73,70 @@
             <button class="filter__button" type="button">Маркетинг</button>
           </li>
         </ul>
-        <!-- Portfolio -->
+        <!-- PORTFOLIO -->
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_first.jpg" alt="website preview" width="370" height="294">
-            <h3 class="portfolio__subtitle">Технокряк</h3>
-            <p class="portfolio__text">Веб-сайт</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Технокряк</h3>
+              <p class="portfolio-content__text">Веб-сайт</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_second.jpg" alt="sport event logo" width="370" height="294">
-            <h3 class="portfolio__subtitle">Постер New Orlean vs Golden Star</h3>
-            <p class="portfolio__text">Дизайн</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Постер New Orlean vs Golden Star</h3>
+              <p class="portfolio-content__text">Дизайн</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_third.jpg" alt="restaurant logo" width="370" height="294">
-            <h3 class="portfolio__subtitle">Ресторан Seafood</h3>
-            <p class="portfolio__text">Приложение</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Ресторан Seafood</h3>
+              <p class="portfolio-content__text">Приложение</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_fourth.jpg" alt="headphones" width="370" height="294">
-            <h3 class="portfolio__subtitle">Проект Prime</h3>
-            <p class="portfolio__text">Маркетинг</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Проект Prime</h3>
+              <p class="portfolio-content__text">Маркетинг</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_fifth.jpg" alt="two boxes" width="370" height="294">
-            <h3 class="portfolio__subtitle">Проект Boxes</h3>
-            <p class="portfolio__text">Приложение</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Проект Boxes</h3>
+              <p class="portfolio-content__text">Приложение</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_sixth.jpg" alt="website" width="370" height="294">
-            <h3 class="portfolio__subtitle">Inspiration has no Borders</h3>
-            <p class="portfolio__text">Веб-сайт</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Inspiration has no Borders</h3>
+              <p class="portfolio-content__text">Веб-сайт</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_seventh.jpg" alt="magazine design" width="370" height="294">
-            <h3 class="portfolio__subtitle">Издание Limited Edition</h3>
-            <p class="portfolio__text">Дизайн</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Издание Limited Edition</h3>
+              <p class="portfolio-content__text">Дизайн</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_eighth.jpg" alt="label picture" width="370" height="294">
-            <h3 class="portfolio__subtitle">Проект LAB</h3>
-            <p class="portfolio__text">Маркетинг</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Проект LAB</h3>
+              <p class="portfolio-content__text">Маркетинг</p>
+            </div>
           </li>
           <li class="portfolio__item">
             <img class="portfolio__img" src="./images/img_ninth.jpg" alt="business app" width="370" height="294">
-            <h3 class="portfolio__subtitle">Growing Business</h3>
-            <p class="portfolio__text">Приложение</p>
+            <div class="portfolio-content">
+              <h3 class="portfolio-content__subtitle">Growing Business</h3>
+              <p class="portfolio-content__text">Приложение</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -128,9 +146,9 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
 
-  <footer class="section footer">
+  <footer class="footer">
     <div class="container">
       <a class="footer__logo" href="./index.html"><span>Web</span>Studio</a>
       <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
