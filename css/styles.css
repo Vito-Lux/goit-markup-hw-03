@@ -483,7 +483,7 @@ button {
 }
 
 .footer__logo {
-  display: inline-block;
+  display: flex;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -497,15 +497,18 @@ button {
 }
 
 .footer__address {
-  padding-bottom: 10px;
+  display: inline-flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: calc(100% + 10px);
   font-style: normal;
   color: var(--main-bg-color);
+  margin-bottom: 0;
 }
 
-.footer-contacts__item {
-  padding-bottom: 10px;
+.footer__address a {
+  width: calc(100% / 12 * 8);
+  padding-top: 10px;
   font-size: 14px;
   line-height: calc(100% + 10px);
   letter-spacing: 0.02em;
@@ -513,12 +516,7 @@ button {
   opacity: 0.6;
 }
 
-.footer-contacts__item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.footer-contacts__item a:hover,
-.footer-contacts__item a:focus {
+.footer__address a:hover,
+.footer__address a:focus {
   color: var(--accent-color);
 }
