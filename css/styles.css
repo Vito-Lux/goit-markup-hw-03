@@ -16,17 +16,6 @@
 
 /* CSS-base */
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*,
-*::after,
-::before {
-  box-sizing: inherit;
-}
-
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -51,27 +40,6 @@ ul {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 /* CSS-common */
 
 .container {
@@ -91,16 +59,13 @@ button {
     Header
 ---------------*/
 
-.header {
-  border-bottom: 1px solid var(--header-border-color);
-}
-
-.header .container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-nav {
@@ -114,6 +79,8 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(100% + 5px);
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-nav__logo span {
@@ -124,12 +91,12 @@ button {
   display: flex;
 }
 
-.header-nav__list li:last-child {
-  margin-right: 0;
-}
-
 .header-nav__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-nav__list li:last-child {
+  margin-right: 0;
 }
 
 .header-nav__link {
@@ -139,6 +106,8 @@ button {
   line-height: calc(100% + 2px);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-nav__link:hover,
@@ -157,6 +126,11 @@ button {
   line-height: calc(100% + 2px);
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+}
+
+.header-contacts__item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-contacts__item:not(:last-child) {
@@ -179,12 +153,9 @@ button {
 ---------------*/
 
 .hero {
-  background-color: var(--secondary-bg-color);
-}
-
-.hero .container {
   padding-bottom: 200px;
   padding-top: 200px;
+  background-color: var(--secondary-bg-color);
 }
 
 .hero-text {
@@ -214,6 +185,7 @@ button {
   min-height: 50px;
   min-width: 200px;
   padding: 10px 32px;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: var(--main-font);
@@ -223,6 +195,7 @@ button {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--main-bg-color);
+  cursor: pointer;
   transition: 750ms;
 }
 
@@ -271,7 +244,7 @@ button {
      Our-work
 ---------------*/
 
-.our-work .container {
+.our-work {
   padding-bottom: 94px;
 }
 
@@ -306,12 +279,9 @@ button {
 ---------------*/
 
 .our-team {
-  background-color: var(--button-bg-color);
-}
-
-.our-team .container {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--button-bg-color);
 }
 
 .our-team__title {
@@ -334,6 +304,12 @@ button {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 4 * 30px) / 4);
+}
+
+.our-team__item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .our-team__list li:last-child {
@@ -359,6 +335,7 @@ button {
   line-height: calc(100% + 2px);
   color: var(--main-text-color);
 }
+
 .our-team__text {
   font-size: 16px;
   line-height: calc(100% + 2px);
@@ -390,11 +367,10 @@ button {
 }
 
 .filter__item:not(:last-child) {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .filter__item:last-child {
-  margin-left: 8px;
   margin-right: 0;
 }
 
@@ -404,11 +380,13 @@ button {
   min-height: 38px;
   min-width: 73px;
   padding: 6px 22px;
+  border: none;
   border-radius: 4px;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(100% + 10px);
+  cursor: pointer;
   background-color: var(--button-bg-color);
 }
 
@@ -435,6 +413,12 @@ button {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.portfolio__item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio__item:last-child {
@@ -474,12 +458,9 @@ button {
 ---------------*/
 
 .footer {
-  background-color: var(--secondary-bg-color);
-}
-
-.footer .container {
   padding-bottom: 60px;
   padding-top: 60px;
+  background-color: var(--secondary-bg-color);
 }
 
 .footer__logo {
@@ -490,6 +471,11 @@ button {
   font-size: 26px;
   line-height: calc(100% + 5px);
   color: var(--main-bg-color);
+}
+
+.footer__logo a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer__logo span {
@@ -510,6 +496,11 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-bg-color);
   opacity: 0.6;
+}
+
+.footer-contacts__item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-contacts__item:last-child {
