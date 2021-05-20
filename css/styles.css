@@ -55,9 +55,17 @@ ul {
   padding-top: 94px;
 }
 
+.current-link a:visited {
+  color: var(--accent-color);
+}
+
 /*---------------
     Header
 ---------------*/
+
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 
 .header-container {
   display: flex;
@@ -65,7 +73,6 @@ ul {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-nav {
@@ -158,15 +165,14 @@ ul {
   background-color: var(--secondary-bg-color);
 }
 
-.hero-text {
+.hero__title {
   display: flex;
   justify-content: center;
-}
-
-.hero__title {
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 696px;
   padding-bottom: 30px;
+  text-align: center;
   color: var(--main-bg-color);
   font-family: var(--main-font);
   font-weight: 900;
@@ -176,12 +182,11 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-btn {
+.hero__button {
   display: flex;
   justify-content: center;
-}
-
-.hero__button {
+  margin-right: auto;
+  margin-left: auto;
   min-height: 50px;
   min-width: 200px;
   padding: 10px 32px;
@@ -211,12 +216,10 @@ ul {
 .after-hero-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
 
 .after-hero-list__item {
-  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 4 * 30px) / 4);
 }
@@ -250,7 +253,7 @@ ul {
 
 .our-work__title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(100% + 6px);
@@ -260,12 +263,10 @@ ul {
 .our-work-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
 
 .our-work-list__item {
-  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
@@ -279,8 +280,6 @@ ul {
 ---------------*/
 
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--button-bg-color);
 }
 
@@ -290,18 +289,16 @@ ul {
   font-size: 36px;
   line-height: calc(100% + 6px);
   color: var(--main-text-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
 
 .our-team-list__item {
-  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 4 * 30px) / 4);
 }
@@ -489,8 +486,12 @@ ul {
   color: var(--main-bg-color);
 }
 
+.footer__address > p {
+  margin-bottom: 10px;
+}
+
 .footer-contacts-list__item {
-  padding-top: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(100% + 10px);
   letter-spacing: 0.02em;
